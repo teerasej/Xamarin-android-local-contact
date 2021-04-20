@@ -28,6 +28,7 @@ namespace LocalContact
 
             var listView = FindViewById<ListView>(Resource.Id.listViewContact);
 
+            listView.Adapter = new ContactModelListAdapter(this, this.contacts);
 
 
         }
