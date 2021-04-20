@@ -9,6 +9,15 @@ namespace LocalContact
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
+        private ContactModel[] contacts = new ContactModel[]
+        {
+            new ContactModel("Nextflow", "083-071-3373"),
+            new ContactModel("Steve", "083-071-3373"),
+            new ContactModel("Tony", "083-071-3373"),
+            new ContactModel("Peter", "083-071-3373")
+        };
+
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
